@@ -62,7 +62,7 @@ class UpSubmission extends Component {
       setAuthToken(tokenStorage.getAuthToken());
 
       axios
-        .post("/submit", {
+        .post("/api/submit", {
           imageUrl: uploadConfig.data.key,
           contestId: match.params.id
         })
